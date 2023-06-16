@@ -46,7 +46,8 @@ class _HeaderWidgetState extends State<HeaderWidget> {
           alignment: Alignment.topLeft,
           child: Text(
             city,
-            style: const TextStyle(fontSize: 35, height: 2),
+            style:
+                const TextStyle(fontSize: 35, color: Colors.black87, height: 2),
           ),
         ),
         Container(
