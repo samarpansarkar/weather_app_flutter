@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app_flutter/controller/global_controller.dart';
 import 'package:get/get.dart';
+import 'package:weather_app_flutter/widgets/header_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,6 +17,22 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Obx(() => globalController.chekLoading().isTrue
+            ? const Center(
+                child: CircularProgressIndicator(),
+              )
+            : ListView(
+                scrollDirection: Axis.vertical,
+                children: const [
+                  SizedBox(
+                    height: 20,
+                  ),
+                  HeaderWidget(),
+                ],
+              )),
+      ),
+    );
   }
 }

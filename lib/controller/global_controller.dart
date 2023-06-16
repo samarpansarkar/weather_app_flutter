@@ -51,6 +51,8 @@ class GlobalController extends GetxController {
       //update our lattitude adn longitude
       _lattitude.value = value.latitude;
       _longitude.value = value.longitude;
+      //calling our app API
+
       _isLoading.value = false;
     });
   }
