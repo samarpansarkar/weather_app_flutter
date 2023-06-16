@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:weather_app_flutter/api/fetch_weather.dart';
@@ -28,6 +26,8 @@ class GlobalController extends GetxController {
   void onInit() {
     if (_isLoading.isTrue) {
       getLocation();
+    } else {
+      getIndex();
     }
     super.onInit();
   }

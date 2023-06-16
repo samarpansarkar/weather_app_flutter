@@ -1,6 +1,4 @@
 import 'dart:convert';
-
-import 'package:weather_app_flutter/api/api_key.dart';
 import 'package:weather_app_flutter/model/weather/weather_data_current.dart';
 import 'package:weather_app_flutter/model/weather/weather_data_hourly.dart';
 import 'package:weather_app_flutter/utils/api_url.dart';
