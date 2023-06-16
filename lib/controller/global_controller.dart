@@ -11,6 +11,7 @@ class GlobalController extends GetxController {
 
   final RxDouble _lattitude = 0.0.obs;
   final RxDouble _longitude = 0.0.obs;
+  final RxInt _currentIndex = 0.obs;
 
   //instane for them tio be called
   RxBool chekLoading() => _isLoading;
@@ -69,5 +70,10 @@ class GlobalController extends GetxController {
         _isLoading.value = false;
       });
     });
+  }
+
+  //card index code
+  RxInt getIndex() {
+    return _currentIndex;
   }
 }

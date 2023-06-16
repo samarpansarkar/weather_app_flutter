@@ -3,6 +3,7 @@ import 'package:weather_app_flutter/controller/global_controller.dart';
 import 'package:get/get.dart';
 import 'package:weather_app_flutter/widgets/current_weather.dart';
 import 'package:weather_app_flutter/widgets/header_widgets.dart';
+import 'package:weather_app_flutter/widgets/hourly_weather.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -37,6 +38,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       weatherDataCurrent:
                           globalController.getData().getCurrentWeather(),
                     ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    HourlyDataWidget(
+                      weatherDataHourly:
+                          globalController.getData().getHourlyWeather(),
+                    )
                   ],
                 ),
               )),

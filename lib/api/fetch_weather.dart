@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:weather_app_flutter/api/api_key.dart';
 import 'package:weather_app_flutter/model/weather/weather_data_current.dart';
+import 'package:weather_app_flutter/model/weather/weather_data_hourly.dart';
 import 'package:weather_app_flutter/utils/api_url.dart';
 
 import '../model/weather/weather_data.dart';
@@ -14,7 +15,8 @@ class FetchWeatherAPI {
   Future<WeatherData> processData(lat, lon) async {
     var response = await http.get(Uri.parse(apiURL(lat, lon)));
     var jsonString = jsonDecode(response.body);
-    weatherData = WeatherData(WeatherDataCurrent.fromJson(jsonString));
+    weatherData = WeatherData(WeatherDataCurrent.fromJson(jsonString),
+        WeatherDataHourly.fromJson(jsonString));
 
     return weatherData!;
   }
