@@ -20,12 +20,6 @@ Interactive User Interface: The app boasts an engaging and visually appealing UI
 
 Hourly and Daily Forecasts: Users can plan their activities effectively with hourly and daily forecasts that provide insights into weather changes throughout the day. This feature helps users make informed decisions about outdoor plans and travel.
 
-Weather Alerts and Notifications: Stay ahead of severe weather conditions with timely alerts and notifications. The app notifies users about upcoming storms, temperature drops, or other critical weather events.
-
 Visual Representations: Using Flutter's rich graphics capabilities, the app offers visual representations of weather conditions through icons, animations, and color schemes, enhancing the overall user experience.
 
-User-Friendly Settings: The app allows users to customize settings based on their preferences, such as temperature units (Celsius or Fahrenheit) and language options.
-
-Whether it's planning a weekend getaway, checking the daily commute forecast, or simply staying informed about the weather, our Flutter-based weather app ensures that users have accurate and easily accessible weather information at their fingertips. Download the app today and experience the future of weather forecasting."
-
-Please note that this description is a general outline and can be customized based on the specific features, design, and functionality of your Flutter weather app.
+hether it's planning a weekend getaway, checking the daily commute forecast, or simply staying informed about the weather, our Flutter-based weather app ensures that users have accurate and easily accessible weather information at their fingertips. Download the app today and experience the future of weather forecasting."
